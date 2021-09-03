@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdaninvest LTDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="page1" style="display: block;">
+        <label>Nome: </label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label>Mensalidade:</label>
+        <input type="number" name="mensalidade" id="mensalidade" required>
+
+        <label>Tempo: </label>
+        <select name="tempo" id="tempo">
+            <option value="3">3 meses</option>
+            <option value="6">6 meses</option>
+            <option value="12" selected>1 ano</option>
+            <option value="24">2 anos</option>
+            <option value="36">3 anos</option>
+            <option value="60">5 anos</option>
+            <option value="120">10 anos</option>
+        </select>
+        
+        <button onclick="simular()">Simular</button>
+    </div>
+
+    <div id="page2" style="display: none;">
+        <p id="result"></p>
+        <button onclick="simularNovamente()">Simular novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
