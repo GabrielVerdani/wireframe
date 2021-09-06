@@ -1,6 +1,10 @@
 const page1 = document.getElementById("page1");
 const page2 = document.getElementById("page2");
-const result = document.getElementById("result");
+
+const nomeResult = document.getElementById("nomeResult");
+const mensalResult = document.getElementById("mensalResult");
+const finalResult = document.getElementById("finalResult");
+const anosResult = document.getElementById("anosResult");
 
 const nomeInput = document.getElementById("nome");
 const mensalInput = document.getElementById("mensalidade");
@@ -29,16 +33,18 @@ function simular() {
             resultado += mensal;
         }
         page1.style.display = "none";
-        page2.style.display = "block";
+        page2.style.display = "flex";
 
-        result.textContent = `Olá ${nome}, juntando R$${mensal.toFixed(2)} todo mês, 
-        você terá R$${resultado.toFixed(2)} em ${displayTempo}.`
+        nomeResult.textContent = nome;
+        mensalResult.textContent = mensal.toFixed(2);
+        finalResult.textContent = resultado.toFixed(2);
+        anosResult.textContent = displayTempo;
     }
 }
 
 function simularNovamente() {
     page2.style.display = "none";
-    page1.style.display = "block";
+    page1.style.display = "flex";
 
     nomeInput.value = "";
     mensalInput.value = "";

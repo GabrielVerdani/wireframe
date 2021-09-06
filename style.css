@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;700&display=swap');
+
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Glory", sans-serif;
+}
+
+body {
+    background: url(./textura.png);
+    padding: 10px;
+}
+
+.page {
+    margin: 50px auto;
+    max-width: 500px;
+    flex-direction: column;
+
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.123);
+    background-color: white;
+}
+
+.page.one h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page.one input {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #111;
+}
+
+.page.one select {
+    padding: 5px;
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.page button {
+    font-size: 1.2rem;
+    background-color: purple;
+    outline: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.page.two .result p {
+    margin: 20px 0;
 }
